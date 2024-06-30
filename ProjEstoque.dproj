@@ -125,6 +125,26 @@
             <Form>FormInfor</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="UnitCadProdutos.pas">
+            <Form>FormCadProdutos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UnitPesquisar.pas">
+            <Form>FormPesquisar</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UnitEstoque.pas">
+            <Form>FormEstoque</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UnitVendas.pas">
+            <Form>FormVendas</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="UnitRelatorio.pas">
+            <Form>FormRelatorio</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

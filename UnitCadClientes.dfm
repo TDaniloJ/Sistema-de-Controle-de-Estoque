@@ -226,6 +226,7 @@ object FormCadClientes: TFormCadClientes
     AutoSelect = False
     DataField = 'ClienteID'
     DataSource = DataModule1.dsClientes
+    Enabled = False
     TabOrder = 3
   end
   object MemoEndereco: TDBEdit

@@ -24,13 +24,6 @@ object FormClientes: TFormClientes
     Height = 65
     Align = alTop
     TabOrder = 0
-    object Label1: TLabel
-      Left = 400
-      Top = 10
-      Width = 86
-      Height = 13
-      Caption = 'Barra de Pesquisa'
-    end
     object BtnAdicionar: TBitBtn
       Left = 8
       Top = 10
@@ -461,14 +454,6 @@ object FormClientes: TFormClientes
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       TabOrder = 3
       OnClick = BtnFecharCadUClick
-    end
-    object Edit1: TEdit
-      Left = 400
-      Top = 29
-      Width = 225
-      Height = 21
-      TabOrder = 4
-      TextHint = 'Pesquise ...'
     end
   end
   object DBGrid1: TDBGrid

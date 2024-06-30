@@ -131,6 +131,7 @@ object FormProdutos: TFormProdutos
         8D7EC06A69B7525FB2475FB24769B7527EC06A9DCF8DC7E4BEF7FBF5FFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       TabOrder = 0
+      OnClick = BtnAdicionarClick
     end
     object BtnEditar: TBitBtn
       Left = 127
@@ -564,6 +565,7 @@ object FormProdutos: TFormProdutos
         75D99B4AD58D2ED3861ED4871ED8902CDEA048E6B773F1D6AFFDF9F3FFFFFFFF
         FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
       TabOrder = 4
+      OnClick = BtnPesquisarClick
     end
   end
   object GridProdutos: TDBGrid

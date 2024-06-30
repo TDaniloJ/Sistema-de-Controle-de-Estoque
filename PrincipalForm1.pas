@@ -20,18 +20,21 @@ type
     Ajuda1: TMenuItem;
     Informao1: TMenuItem;
     BtnRelatorio: TBitBtn;
-    BtnEstoque: TBitBtn;
     BtnProduto: TBitBtn;
     BtnCliente: TBitBtn;
     BtnVendas: TBitBtn;
     Estoque1: TMenuItem;
     Vendas1: TMenuItem;
     Vendas2: TMenuItem;
+    BtnEstoque: TBitBtn;
     procedure BtnFecharClick(Sender: TObject);
     procedure BtnClienteClick(Sender: TObject);
     procedure BtnProdutoClick(Sender: TObject);
     procedure Cadastra1Click(Sender: TObject);
     procedure Informao1Click(Sender: TObject);
+    procedure BtnEstoqueClick(Sender: TObject);
+    procedure BtnVendasClick(Sender: TObject);
+    procedure BtnRelatorioClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -45,11 +48,17 @@ implementation
 
 {$R *.dfm}
 
-uses UnitClientes, UnitProdutos, UnitCadClientes, UnitInfor;
+uses UnitClientes, UnitProdutos, UnitCadClientes, UnitInfor, UnitEstoque,
+  UnitRelatorio, UnitVendas;
 
 procedure TFormPrincipal.BtnClienteClick(Sender: TObject);
 begin
   FormClientes.ShowModal;
+end;
+
+procedure TFormPrincipal.BtnEstoqueClick(Sender: TObject);
+begin
+  FormEstoque.ShowModal;
 end;
 
 procedure TFormPrincipal.BtnFecharClick(Sender: TObject);
@@ -60,6 +69,16 @@ end;
 procedure TFormPrincipal.BtnProdutoClick(Sender: TObject);
 begin
   FormProdutos.ShowModal;
+end;
+
+procedure TFormPrincipal.BtnRelatorioClick(Sender: TObject);
+begin
+  FormRelatorio.ShowModal;
+end;
+
+procedure TFormPrincipal.BtnVendasClick(Sender: TObject);
+begin
+  FormVendas.ShowModal;
 end;
 
 procedure TFormPrincipal.Cadastra1Click(Sender: TObject);

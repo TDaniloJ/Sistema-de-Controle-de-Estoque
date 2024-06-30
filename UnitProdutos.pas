@@ -18,6 +18,8 @@ type
     BtnPesquisar: TBitBtn;
     procedure BtnFecharClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure BtnAdicionarClick(Sender: TObject);
+    procedure BtnPesquisarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,11 +33,21 @@ implementation
 
 {$R *.dfm}
 
-uses DM;
+uses DM, UnitCadProdutos, UnitPesquisar;
+
+procedure TFormProdutos.BtnAdicionarClick(Sender: TObject);
+begin
+  FormCadProdutos.ShowModal;
+end;
 
 procedure TFormProdutos.BtnFecharClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TFormProdutos.BtnPesquisarClick(Sender: TObject);
+begin
+  FormPesquisar.ShowModal;
 end;
 
 procedure TFormProdutos.FormShow(Sender: TObject);

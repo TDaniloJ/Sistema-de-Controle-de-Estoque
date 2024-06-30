@@ -15,8 +15,6 @@ type
     BtnExcluir: TBitBtn;
     DBGrid1: TDBGrid;
     BtnFecharCadU: TBitBtn;
-    Edit1: TEdit;
-    Label1: TLabel;
     procedure BtnAdicionarClick(Sender: TObject);
     procedure BtnFecharCadUClick(Sender: TObject);
     procedure BtnExcluirClick(Sender: TObject);
